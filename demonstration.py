@@ -12,7 +12,7 @@ soup = BeautifulSoup(page, 'html.parser')
 #This makes an array of all the rows
 row_box = soup.find_all('tr', attrs={'class': 'oddrow'})
 
-#This makes an array of all elements in the first row
+#This makes a list of all elements in the first row
 units = row_box[0].find_all('td')
 
 
